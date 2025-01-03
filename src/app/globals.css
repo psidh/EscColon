@@ -2,3 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.nav a {
+    /* border-right: 1px solid black; */
+    padding: 2.2rem 2.5rem;
+  }
+  .nav a:first-child {
+    /* border-left: 1px solid black; */
+    /* border-right: 1px solid black; */
+    padding: 2.2rem 2.5rem;
+  }
+  
