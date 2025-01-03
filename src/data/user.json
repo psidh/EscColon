@@ -1,0 +1,140 @@
+[
+  {
+    "user_id": "U001",
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com",
+    "residence": {
+      "country": "USA",
+      "state": "California",
+      "district": "Los Angeles",
+      "locality": "Downtown"
+    },
+    "plastic_usage": {
+      "single_use_plastics": 1.5,
+      "recyclables": 2.0,
+      "non_recyclables": 1.0,
+      "bulk_plastic": 0.5,
+      "total": 5.0
+    },
+    "weekly_reports": [
+      {
+        "week_start_date": "2025-01-01",
+        "week_end_date": "2025-01-07",
+        "total_plastic_used": 35.0,
+        "trend_analysis": "Consistent usage with an increase in recyclables",
+        "suggestions": [
+          "Switch to reusable containers",
+          "Reduce single-use plastic usage"
+        ]
+      }
+    ]
+  },
+  {
+    "user_id": "U002",
+    "name": "Bob Smith",
+    "email": "bob.smith@example.com",
+    "residence": {
+      "country": "India",
+      "state": "Delhi",
+      "district": "New Delhi",
+      "locality": "Connaught Place"
+    },
+    "plastic_usage": {
+      "single_use_plastics": 2.0,
+      "recyclables": 1.5,
+      "non_recyclables": 0.5,
+      "bulk_plastic": 0.0,
+      "total": 4.0
+    },
+    "weekly_reports": [
+      {
+        "week_start_date": "2025-01-01",
+        "week_end_date": "2025-01-07",
+        "total_plastic_used": 28.0,
+        "trend_analysis": "Decrease in non-recyclables",
+        "suggestions": ["Try bulk purchasing options"]
+      }
+    ]
+  },
+  {
+    "user_id": "U003",
+    "name": "Carlos Vega",
+    "email": "carlos.vega@example.com",
+    "residence": {
+      "country": "Mexico",
+      "state": "Mexico City",
+      "district": "Benito Juarez",
+      "locality": "Del Valle"
+    },
+    "plastic_usage": {
+      "single_use_plastics": 1.0,
+      "recyclables": 1.0,
+      "non_recyclables": 1.0,
+      "bulk_plastic": 1.0,
+      "total": 4.0
+    },
+    "weekly_reports": [
+      {
+        "week_start_date": "2025-01-01",
+        "week_end_date": "2025-01-07",
+        "total_plastic_used": 28.0,
+        "trend_analysis": "Increase in bulk plastic",
+        "suggestions": ["Reduce bulk packaging"]
+      }
+    ]
+  },
+  {
+    "user_id": "U004",
+    "name": "Diane Lee",
+    "email": "diane.lee@example.com",
+    "residence": {
+      "country": "UK",
+      "state": "England",
+      "district": "London",
+      "locality": "Camden"
+    },
+    "plastic_usage": {
+      "single_use_plastics": 2.5,
+      "recyclables": 2.0,
+      "non_recyclables": 1.0,
+      "bulk_plastic": 0.5,
+      "total": 6.0
+    },
+    "weekly_reports": [
+      {
+        "week_start_date": "2025-01-01",
+        "week_end_date": "2025-01-07",
+        "total_plastic_used": 42.0,
+        "trend_analysis": "High reliance on single-use plastics",
+        "suggestions": ["Use biodegradable alternatives"]
+      }
+    ]
+  },
+  {
+    "user_id": "U005",
+    "name": "Ethan Brown",
+    "email": "ethan.brown@example.com",
+    "residence": {
+      "country": "Canada",
+      "state": "British Columbia",
+      "district": "Vancouver",
+      "locality": "Kitsilano"
+    },
+    "plastic_usage": {
+      "single_use_plastics": 0.5,
+      "recyclables": 1.0,
+      "non_recyclables": 0.5,
+      "bulk_plastic": 0.2,
+      "total": 2.2
+    },
+    "weekly_reports": [
+      {
+        "week_start_date": "2025-01-01",
+        "week_end_date": "2025-01-07",
+        "total_plastic_used": 15.4,
+        "trend_analysis": "Consistently low plastic usage",
+        "suggestions": ["Maintain current habits"]
+      }
+    ]
+  }
+]
