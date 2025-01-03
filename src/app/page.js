@@ -6,11 +6,34 @@ import { GoArrowUpRight } from "react-icons/go";
 export default function Page() {
   return (
     <div className="w-full">
-      <div className="flex mt-12 flex-col items-center justify-center relative mx-16">
+      <div className="flex flex-col items-center justify-center relative mx-16 mt-12">
+        <div className="absolute w-full left-0 top-24">
+          <img src="/hero1.jpg" className="w-[250px] h-[200px] rounded-3xl" />
+          <div className="absolute left-0 bottom-24 w-[250px] transform translate-y-full">
+            <div className="rounded-3xl p-5 bg-[#cbfab4]">
+              {" "}
+              <p className="text-black font-semibold text-lg">
+                Learn More About Reducing Plastic Waste
+              </p>
+              <p className="text-slate-700 font-light text-sm">
+                Visit our blog...
+              </p>
+            </div>
+            <div className="rounded-3xl p-5 bg-[#f3f3f3]">
+              <p className="text-black font-semibold text-lg">
+                Have Questions?
+              </p>
+              <p className="text-slate-700 font-light text-sm">
+                Ask us anything...
+              </p>
+            </div>
+          </div>
+        </div>
+
         <img
           src="/Group 8.jpg"
           alt="Ring Image"
-          className="w-[35%] object-cover top-0"
+          className="w-[35%] object-cover top-0 "
         />
         <div className="flex items-center justify-between w-full">
           <a
@@ -33,7 +56,7 @@ export default function Page() {
       </div>
       <Section2 />
       <FourCard />
-      <Section3/>
+      <Section3 />
     </div>
   );
 }
