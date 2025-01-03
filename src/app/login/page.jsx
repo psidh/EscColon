@@ -17,6 +17,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 export default function TabsDemo() {
   const router = useRouter();
   const handleSignUp = () => {
+    localStorage.setItem("isAuthenticated", "true");
     toast("Account has been created", {
       description: "Friday, Jan 03, 2025",
       action: {
@@ -28,6 +29,7 @@ export default function TabsDemo() {
   };
 
   const handleLogin = () => {
+    localStorage.setItem("isAuthenticated", "true");
     toast("Logged in successfully", {
       description: "Friday, Jan 03, 2025",
       action: {

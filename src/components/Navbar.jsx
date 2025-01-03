@@ -9,7 +9,12 @@ export default function Navbar() {
     console.log("Toggle Nav Clicked");
     setIsNavOpen(!isNavOpen);
   };
-
+  const [loggedIn, isLoggedIn] = useState(false);
+  if(localStorage.getItem("isAuthenticated") === true){
+    console.log(localStorage.getItem("isAuthenticated"));
+    
+    isLoggedIn(true);
+  }
   return (
     <div
       className={`px-8 md:px-20 lg:px-20 
@@ -17,14 +22,10 @@ export default function Navbar() {
     >
       <a href="/" className="flex gap-4 items-center py-6">
         <p className="font-bold text-outline text-2xl border-[1.5px] border-neutral-700 px-[0.6rem] py-[2px] rounded-md hover:bg-neutral-200 hover:text-outline-white hover:scale-[110%] transition-all duration-300">
-          L
+          E
         </p>
-        <p className="font-bold text-2xl leading-4 mt-1">
-          L
-          <br />
-          <span className="text-[0.72rem] font-medium lowercase">
-            LifeOnLand
-          </span>
+        <p className="font-light text-2xl leading-4 mt-1">
+            EscColon
         </p>
       </a>
       <div className="hidden lg:flex nav font-light text-sm tracking-wider">
@@ -52,12 +53,21 @@ export default function Navbar() {
         >
           Resources
         </a>
-        <a
-          className="hover:underline underline-offset-[6px] decoration-[1px]"
-          href="/login"
-        >
-          Login
-        </a>
+        {!loggedIn ? (
+          <a
+            className="hover:underline underline-offset-[6px] decoration-[1px]"
+            href="/municipal"
+          >
+            Municipal
+          </a>
+        ) : (
+          <a
+            className="hover:underline underline-offset-[6px] decoration-[1px]"
+            href="/login"
+          >
+            Login
+          </a>
+        )}
       </div>
       <RiMenuLine
         onClick={toggleNav}

@@ -12,11 +12,14 @@ import {
 } from "@/components/ui/table";
 
 import { data } from "@/data/mumbai";
+import Analytics from "@/components/Analytics";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function TableDemo() {
+  const router = useRouter();
   const [showTable, setShowTable] = useState(false); // State to control table visibility
-
+  const [showAnalytics, setShowAnalytics] = useState(false); // State to control analytics visibility
   return (
     <div className="mt-24 px-16 py-8">
       {/* Buttons */}
@@ -26,19 +29,18 @@ export default function TableDemo() {
         </Button>
         <Button
           onClick={() =>
-            alert("Add Data functionality is not implemented yet!")
+            router.push("/municipal/add-data") // Navigate to Add Data page
           }
         >
           Add Data
         </Button>
-        <Button
-          onClick={() =>
-            alert("Analytics functionality is not implemented yet!")
-          }
-        >
-          Analytics
+        <Button onClick={() => setShowAnalytics(!showAnalytics)}>
+          {showAnalytics ? "Hide Analytics" : "See Analytics"}
         </Button>
       </div>
+
+      {/* Analytics (conditionally rendered) */}
+      {showAnalytics && <Analytics />}
 
       {/* Table (conditionally rendered) */}
       {showTable && (
