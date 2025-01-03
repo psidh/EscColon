@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import QrReader from "react-qr-scanner"; // Use `react-qr-scanner` library
 import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 
 export default function FormWithQRCode() {
   const [formData, setFormData] = useState({
