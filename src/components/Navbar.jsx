@@ -16,7 +16,7 @@ export default function Navbar() {
       flex justify-between items-center border-b-[1px] backdrop-blur-xl border-neutral-700 uppercase fixed top-0 w-full z-50 `}
     >
       <a href="/" className="flex gap-4 items-center py-6">
-        <p className="font-bold text-outline text-2xl border-[1.5px] border-neutral-700 px-[0.6rem] py-[2px] rounded-md hover:bg-neutral-700 hover:text-outline-white hover:scale-[110%] transition-all duration-300">
+        <p className="font-bold text-outline text-2xl border-[1.5px] border-neutral-700 px-[0.6rem] py-[2px] rounded-md hover:bg-neutral-200 hover:text-outline-white hover:scale-[110%] transition-all duration-300">
           L
         </p>
         <p className="font-bold text-2xl leading-4 mt-1">

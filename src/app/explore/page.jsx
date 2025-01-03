@@ -2,7 +2,7 @@ import { GoArrowUpRight } from "react-icons/go";
 
 export default function ExplorePage() {
   return (
-    <div className="w-full h-screen relative py-20">
+    <div className="w-full h-screen relative py-20 text-black">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -10,11 +10,11 @@ export default function ExplorePage() {
           backgroundImage: `url('/explore.jpg')`,
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div className="absolute inset-0"></div>
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex p-16 flex-col items-center justify-between text-white text-center px-4">
+      <div className="relative z-10 flex p-16 flex-col items-center justify-between text-center px-4">
         {/* Heading */}
         <h1 className="text-5xl md:text-7xl font-light mb-8">
           Together, Let&apos;s <span className="italic">Reduce</span> Plastic
@@ -32,7 +32,7 @@ export default function ExplorePage() {
         {/* Call to Action Button */}
         <a
           href="/explore"
-          className="flex items-center justify-center w-64 font-medium text-lg py-3 px-6 border border-green-500 rounded-full hover:bg-green-600 hover:text-white transition-all duration-200 mb-6"
+          className="flex items-center justify-center w-64 font-medium text-lg py-3 px-6 border-2 border-sky-500 rounded-full hover:bg-sky-600 hover:text-white transition-all duration-200 mb-6"
         >
           Explore Now
           <GoArrowUpRight className="ml-2" />
@@ -42,13 +42,13 @@ export default function ExplorePage() {
         <div className="flex flex-col md:flex-row items-center gap-4 text-base font-light">
           <a
             href="/resources"
-            className="flex items-center justify-center py-2 px-4 border border-neutral-300 rounded-lg hover:bg-neutral-700 hover:text-white transition-all duration-200"
+            className="flex items-center justify-center w-48 py-3 px-8 border-2 rounded-full border-white font-light hover:bg-white text-black transition-all duration-200"
           >
             Get Resources
           </a>
           <a
             href="/collaborate"
-            className="flex items-center justify-center py-2 px-4 border border-neutral-300 rounded-lg hover:bg-neutral-700 hover:text-white transition-all duration-200"
+            className="flex items-center justify-center  py-3 px-8 border rounded-full border-neutral-300 bg-white transition-all duration-200"
           >
             Collaborate with Us
           </a>

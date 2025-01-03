@@ -2,17 +2,7 @@ import { GoArrowUpRight } from "react-icons/go";
 
 export default function ResourcesPage() {
   return (
-    <div className="w-full h-screen bg-neutral-900 text-white relative">
-      {/* Background Overlay */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: `url('/resources.jpg')`,
-        }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-70"></div>
-      </div>
-
+    <div className="w-full h-screen relative pt-20">
       {/* Content */}
       <div className="relative z-10 px-8 py-12">
         <h1 className="text-6xl font-light text-center mb-12">
@@ -21,7 +11,7 @@ export default function ResourcesPage() {
 
         <div className="grid grid-cols-3 gap-8">
           {/* Card 1 */}
-          <div className="bg-neutral-800 rounded-3xl p-6 shadow-lg shadow-green-500 transition-shadow duration-200">
+          <div className="border border-neutral-200 rounded-3xl p-6 shadow-md shadow-green-500 transition-shadow duration-200">
             <h2 className="text-2xl font-semibold mb-4">
               Tips to Reduce Plastic Waste
             </h2>
@@ -39,7 +29,7 @@ export default function ResourcesPage() {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-neutral-800 rounded-3xl p-6 shadow-lg shadow-green-500 transition-shadow duration-200">
+          <div className="border border-neutral-200 rounded-3xl p-6 shadow-md shadow-green-500 transition-shadow duration-200">
             <h2 className="text-2xl font-semibold mb-4">
               Collaborative Projects
             </h2>
@@ -57,7 +47,7 @@ export default function ResourcesPage() {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-neutral-800 rounded-3xl p-6 shadow-lg shadow-green-500 transition-shadow duration-200">
+          <div className="border border-neutral-200 rounded-3xl p-6 shadow-md shadow-green-500 transition-shadow duration-200">
             <h2 className="text-2xl font-semibold mb-4">Our Blog</h2>
             <p className="text-base font-light mb-6">
               Stay updated with the latest insights and stories from our
@@ -75,8 +65,8 @@ export default function ResourcesPage() {
       </div>
 
       {/* Footer Glow */}
-      <div className="absolute bottom-0 left-0 w-full py-6 bg-neutral-800 bg-opacity-90">
-        <p className="text-center text-sm italic font-light text-neutralbg-neutral-400">
+      <div className="absolute bottom-0 left-0 w-full py-6 border border-neutral-200 bg-opacity-90">
+        <p className="text-center text-sm italic font-light text-neutral ">
           &quot;Empowering communities and governments to reduce plastic waste
           through knowledge and collaboration.&quot;
         </p>
