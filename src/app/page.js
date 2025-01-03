@@ -32,8 +32,8 @@ export default function Page() {
         </p>
       </div>
       <Section2 />
-      <Section3/>
       <FourCard />
+      <Section3/>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 export default function Section3() {
   return (
-    <div className="w-full flex flex-col justify-center items-center space-y-4">
+    <div className="w-full flex flex-col justify-center items-center space-y-4 mt-16">
       <div className="w-full px-10 flex justify-between items-center text-black">
         <p className="text-2xl font-semibold w-fit">
           Rethink Plastic, <br />
@@ -16,8 +16,8 @@ export default function Section3() {
           <div
             className="absolute inset-0 bg-white bg-clip-padding w-full h-[200px] rounded-xl"
             // style={{
-            //   clipPath: "inset(0 0 50% 0)", 
-            //   background: "inherit", 
+            //   clipPath: "inset(0 0 50% 0)",
+            //   background: "inherit",
             //   mixBlendMode: "normal",
             // }}
           ></div>
