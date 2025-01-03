@@ -32,8 +32,8 @@ export default function Section2() {
   ];
 
   return (
-    <div className="w-full h-fit px-16 flex flex-col justify-start items-start space-x-5">
-      <p className="text-black font-mono text-3xl antialiased tracking-wide mb-5 ml-4">
+    <div className="w-full h-fit p-16 flex flex-col justify-start items-start space-x-5">
+      <p className="text-black text-3xl antialiased tracking-wide mb-5 ml-4">
         Track, Reduce, and <br /> Reimagine Your Plastic Use
       </p>
 
