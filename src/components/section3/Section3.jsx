@@ -1,12 +1,12 @@
 export default function Section3() {
   return (
     <div className="w-full flex flex-col justify-center items-center space-y-4">
-      <div className="w-full px-10 flex-justify-between items-center text-black">
-        <p className="text-2xl font-semibold">
+      <div className="w-full px-10 flex justify-between items-center text-black">
+        <p className="text-2xl font-semibold w-fit">
           Rethink Plastic, <br />
           Reimagine Our World
         </p>
-        <p className="uppercase font-light text-sm text-end">
+        <p className="uppercase font-light text-sm text-end text-wrap w-1/2">
           Reducing plastic waste protects ecosystems, conserves resources, and
           minimizes pollution.
         </p>
