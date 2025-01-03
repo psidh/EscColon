@@ -1,6 +1,6 @@
 import FourCard from "@/components/FourCard";
 import Section2 from "@/components/section2/Section2";
-import Section3 from "@/components/section3/section3";
+import Section3 from "@/components/section3/Section3";
 import { GoArrowUpRight } from "react-icons/go";
 
 export default function Page() {
