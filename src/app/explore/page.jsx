@@ -29,15 +29,6 @@ export default function ExplorePage() {
           sustainable, plastic-free future.
         </p>
 
-        {/* Call to Action Button */}
-        <a
-          href="/explore"
-          className="flex items-center justify-center w-64 font-medium text-lg py-3 px-6 border-2 border-sky-500 rounded-full hover:bg-sky-600 hover:text-white transition-all duration-200 mb-6"
-        >
-          Explore Now
-          <GoArrowUpRight className="ml-2" />
-        </a>
-
         {/* Secondary Links */}
         <div className="flex flex-col md:flex-row items-center gap-4 text-base font-light">
           <a

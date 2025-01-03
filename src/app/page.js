@@ -44,8 +44,8 @@ export default function Page() {
             Explore Now
             <GoArrowUpRight />
           </a>
-          <h1 className="text-8xl w-full text-right  font-light">
-            Join Us in <span className="italic">building</span> <br /> a clean
+          <h1 className="text-7xl w-full text-right  font-light">
+            Join Us in <span className="italic">building</span> a <br />  clean
             Environment
           </h1>
         </div>

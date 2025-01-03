@@ -30,37 +30,22 @@ export default function Navbar() {
         </a>
         <a
           className="hover:underline underline-offset-[6px] decoration-[1px]"
-          href="/monitor"
-        >
-          Monitor
-        </a>
-        <a
-          className="hover:underline underline-offset-[6px] decoration-[1px]"
-          href="/daily-usage"
-        >
-          Daily Usage
-        </a>
-        <a
-          className="hover:underline underline-offset-[6px] decoration-[1px]"
           href="/resources"
         >
           Resources
         </a>
-        {!loggedIn ? (
-          <a
-            className="hover:underline underline-offset-[6px] decoration-[1px]"
-            href="/municipal"
-          >
-            Municipal
-          </a>
-        ) : (
-          <a
-            className="hover:underline underline-offset-[6px] decoration-[1px]"
-            href="/login"
-          >
-            Login
-          </a>
-        )}
+        <a
+          className="hover:underline underline-offset-[6px] decoration-[1px]"
+          href="/user"
+        >
+          User
+        </a>
+        <a
+          className="hover:underline underline-offset-[6px] decoration-[1px]"
+          href="/municipal"
+        >
+          Municipal CORP
+        </a>
       </div>
       <RiMenuLine
         onClick={toggleNav}
