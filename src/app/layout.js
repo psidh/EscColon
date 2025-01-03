@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import { Poppins } from "next/font/google";
+import { Toaster } from "@/components/ui/sonner"
 import "./globals.css";
 
 const plus = Poppins({
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
+        <Toaster />
       </body>
     </html>
   );

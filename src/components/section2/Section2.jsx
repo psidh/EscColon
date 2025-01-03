@@ -32,9 +32,12 @@ export default function Section2() {
   ];
 
   return (
-    <div className="w-full h-fit p-16 flex flex-col justify-start items-start space-x-5">
-      <p className="text-black text-3xl antialiased tracking-wide mb-5 ml-4">
-        Track, Reduce, and <br /> Reimagine Your Plastic Use
+    <div className="w-full h-fit px-16 py-36 flex flex-col justify-start items-start ">
+      <p className="text-5xl tracking-wide mb-5">
+        Track, Reduce, and <br />
+      </p>
+      <p className="text-5xl tracking-wide mb-16">
+        <span className="italic">Re-Imagine</span> Your Plastic Use
       </p>
 
       <div className="w-full flex justify-between items-center h-max space-x-5">
@@ -48,7 +51,11 @@ export default function Section2() {
           {boxes.map((item, index) => (
             <div
               key={index}
-              className={`w-[300px] flex flex-col justify-between space-y-4 p-4 ${item.dark ? 'bg-[#2a2a2a] text-white rounded-lg' : "border-t-2 border-black text-black"}  `}
+              className={`w-[300px] flex flex-col justify-between space-y-4 p-4 ${
+                item.dark
+                  ? "bg-[#2a2a2a] text-white rounded-lg"
+                  : "border-t-2 border-black text-black"
+              }  `}
             >
               <div className="space-y-4">
                 <p className="font-normal">{item.title}</p>

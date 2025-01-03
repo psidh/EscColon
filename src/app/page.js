@@ -1,15 +1,15 @@
+import FourCard from "@/components/FourCard";
 import Section2 from "@/components/section2/Section2";
 import { GoArrowUpRight } from "react-icons/go";
-import { MdFullscreen } from "react-icons/md";
 
 export default function Page() {
   return (
     <div className="w-full">
-      <div className="mt-24 flex flex-col items-center justify-center relative mx-16 ">
+      <div className="flex mt-12 flex-col items-center justify-center relative mx-16">
         <img
-          src="/ring.jpg"
+          src="/Group 8.jpg"
           alt="Ring Image"
-          className="w-[25%] object-cover top-0"
+          className="w-[35%] object-cover top-0"
         />
         <div className="flex items-center justify-between w-full">
           <a
@@ -31,6 +31,7 @@ export default function Page() {
         </p>
       </div>
       <Section2 />
+      <FourCard />
     </div>
   );
 }

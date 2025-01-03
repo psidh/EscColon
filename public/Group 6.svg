@@ -1,0 +1,21 @@
+<svg width="989" height="1045" viewBox="0 0 989 1045" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="587.059" cy="401.846" r="284.362" transform="rotate(-41.7503 587.059 401.846)" fill="url(#paint0_angular_23_94)"/>
+<circle cx="285.415" cy="666.831" r="177.768" transform="rotate(90 285.415 666.831)" fill="white"/>
+<circle cx="587.127" cy="402.359" r="177.768" transform="rotate(90 587.127 402.359)" fill="white"/>
+<path d="M843.592 333.992L665.208 328.215L847.026 155.548L843.592 333.992Z" fill="#4EB8D8"/>
+<circle cx="285.339" cy="667.214" r="284.362" transform="rotate(90 285.339 667.214)" fill="url(#paint1_angular_23_94)"/>
+<circle cx="287.81" cy="669.511" r="177.768" transform="rotate(90 287.81 669.511)" fill="white"/>
+<path d="M166.487 899.667L289.316 770.179L297.577 1020.78L166.487 899.667Z" fill="#1FA648"/>
+<defs>
+<radialGradient id="paint0_angular_23_94" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(587.059 401.846) rotate(-1.66553) scale(284.482)">
+<stop stop-color="white"/>
+<stop offset="0.67" stop-color="#88E2EA"/>
+<stop offset="1" stop-color="#4EB8D8"/>
+</radialGradient>
+<radialGradient id="paint1_angular_23_94" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(285.339 667.214) rotate(-1.66553) scale(284.482)">
+<stop stop-color="white"/>
+<stop offset="0.54" stop-color="#69F55C"/>
+<stop offset="1" stop-color="#1EA647"/>
+</radialGradient>
+</defs>
+</svg>

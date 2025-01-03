@@ -52,6 +52,12 @@ export default function Navbar() {
         >
           Resources
         </a>
+        <a
+          className="hover:underline underline-offset-[6px] decoration-[1px]"
+          href="/login"
+        >
+          Login
+        </a>
       </div>
       <RiMenuLine
         onClick={toggleNav}
