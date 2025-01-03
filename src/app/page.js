@@ -1,4 +1,5 @@
 import Section2 from "@/components/section2/Section2";
+import Section3 from "@/components/section3/section3";
 import { GoArrowUpRight } from "react-icons/go";
 import { MdFullscreen } from "react-icons/md";
 
@@ -31,6 +32,7 @@ export default function Page() {
         </p>
       </div>
       <Section2 />
+      <Section3/>
     </div>
   );
 }
