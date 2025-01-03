@@ -10,23 +10,16 @@ export default function Navbar() {
     setIsNavOpen(!isNavOpen);
   };
   const [loggedIn, isLoggedIn] = useState(false);
-  if(localStorage.getItem("isAuthenticated") === true){
-    console.log(localStorage.getItem("isAuthenticated"));
-    
-    isLoggedIn(true);
-  }
   return (
     <div
       className={`px-8 md:px-20 lg:px-20 
-      flex justify-between items-center border-b-[1px] backdrop-blur-xl border-neutral-700 uppercase fixed top-0 w-full z-50 `}
+      flex justify-between items-center backdrop-blur-xl  uppercase fixed top-0 w-full z-50 `}
     >
       <a href="/" className="flex gap-4 items-center py-6">
         <p className="font-bold text-outline text-2xl border-[1.5px] border-neutral-700 px-[0.6rem] py-[2px] rounded-md hover:bg-neutral-200 hover:text-outline-white hover:scale-[110%] transition-all duration-300">
           E
         </p>
-        <p className="font-light text-2xl leading-4 mt-1">
-            EscColon
-        </p>
+        <p className="font-light text-2xl leading-4 mt-1">EscColon</p>
       </a>
       <div className="hidden lg:flex nav font-light text-sm tracking-wider">
         <a

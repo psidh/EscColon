@@ -11,7 +11,7 @@ export default function Section3() {
           minimizes pollution.
         </p>
       </div>
-      <div className="w-full min-h-[600px] bg-[url(/section3.jpg)] bg-no-repeat bg-center bg-cover flex justify-center items-center">
+      <div className="w-full min-h-[600px] bg-[url(/ocean2.jpg)] bg-no-repeat bg-center bg-cover flex justify-center items-center">
         <div className="h-[70%] w-[30%] bg-white rounded-xl flex flex-col justify-center p-6 space-y-5 relative">
           <div
             className="absolute inset-0 bg-white bg-clip-padding w-full h-[200px] rounded-xl"

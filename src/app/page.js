@@ -13,18 +13,19 @@ export default function Page() {
             <div className="rounded-3xl p-5 bg-[#cbfab4]">
               {" "}
               <p className="text-black font-semibold text-lg">
-                Learn More About Reducing Plastic Waste
+                Reducing Plastic Waste
               </p>
-              <p className="text-slate-700 font-light text-sm">
-                Visit our blog...
-              </p>
+              <a href="/resources" className="flex items-center justify-start mt-2 text-neutral-700 underline font-light text-sm">
+                Blog
+                <GoArrowUpRight />
+              </a>
             </div>
             <div className="rounded-3xl p-5 bg-[#f3f3f3]">
               <p className="text-black font-semibold text-lg">
                 Have Questions?
               </p>
-              <p className="text-slate-700 font-light text-sm">
-                Ask us anything...
+              <p className="text-neutral-700 font-light text-sm">
+                Ask us anything
               </p>
             </div>
           </div>
