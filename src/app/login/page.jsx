@@ -21,7 +21,7 @@ export default function TabsDemo() {
       description: "Friday, Jan 03, 2025",
       action: {
         label: "Go to Dashboard",
-        onClick: () => router.push("/dashboard"),
+        onClick: () => router.push("/municipal"),
       },
       duration: 5000,
     });
@@ -32,7 +32,7 @@ export default function TabsDemo() {
       description: "Friday, Jan 03, 2025",
       action: {
         label: "Go to Dashboard",
-        onClick: () => router.push("/dashboard"),
+        onClick: () => router.push("/municipal"),
       },
       duration: 5000,
     });
