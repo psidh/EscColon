@@ -5,9 +5,9 @@ export const data = [
     email: "patel.family@example.com",
     residence: {
       country: "India",
-      state: "Maharashtra",
-      district: "Mumbai",
-      locality: "Andheri West",
+      state: "Andhra Pradesh",
+      district: "Visakhapatnam",
+      locality: "Endada",
     },
     plastic_usage: {
       single_use_plastics: 2.5,
@@ -23,9 +23,9 @@ export const data = [
     email: "khan.family@example.com",
     residence: {
       country: "India",
-      state: "Maharashtra",
-      district: "Mumbai",
-      locality: "Bandra East",
+      state: "Andhra Pradesh",
+      district: "Visakhapatnam",
+      locality: "Sindia",
     },
     plastic_usage: {
       single_use_plastics: 3.0,
@@ -41,9 +41,9 @@ export const data = [
     email: "mehta.family@example.com",
     residence: {
       country: "India",
-      state: "Maharashtra",
-      district: "Mumbai",
-      locality: "Colaba",
+      state: "Andhra Pradesh",
+      district: "Visakhapatnam",
+      locality: "Madhurwada",
     },
     plastic_usage: {
       single_use_plastics: 1.5,
@@ -59,9 +59,9 @@ export const data = [
     email: "sharma.family@example.com",
     residence: {
       country: "India",
-      state: "Maharashtra",
-      district: "Mumbai",
-      locality: "Dadar",
+      state: "Andhra Pradesh",
+      district: "Visakhapatnam",
+      locality: "Port Area",
     },
     plastic_usage: {
       single_use_plastics: 4.0,
@@ -77,9 +77,9 @@ export const data = [
     email: "desai.family@example.com",
     residence: {
       country: "India",
-      state: "Maharashtra",
-      district: "Mumbai",
-      locality: "Goregaon",
+      state: "Andhra Pradesh",
+      district: "Visakhapatnam",
+      locality: "Central City",
     },
     plastic_usage: {
       single_use_plastics: 2.0,
@@ -95,9 +95,9 @@ export const data = [
     email: "nair.family@example.com",
     residence: {
       country: "India",
-      state: "Maharashtra",
-      district: "Mumbai",
-      locality: "Powai",
+      state: "Andhra Pradesh",
+      district: "Visakhapatnam",
+      locality: "MVP",
     },
     plastic_usage: {
       single_use_plastics: 3.5,
@@ -113,9 +113,9 @@ export const data = [
     email: "rao.family@example.com",
     residence: {
       country: "India",
-      state: "Maharashtra",
-      district: "Mumbai",
-      locality: "Malad West",
+      state: "Andhra Pradesh",
+      district: "Visakhapatnam",
+      locality: "Kurmanapalem",
     },
     plastic_usage: {
       single_use_plastics: 2.0,
@@ -131,9 +131,9 @@ export const data = [
     email: "joshi.family@example.com",
     residence: {
       country: "India",
-      state: "Maharashtra",
-      district: "Mumbai",
-      locality: "Vile Parle",
+      state: "Andhra Pradesh",
+      district: "Visakhapatnam",
+      locality: "Steel City",
     },
     plastic_usage: {
       single_use_plastics: 1.8,
@@ -149,9 +149,9 @@ export const data = [
     email: "iyer.family@example.com",
     residence: {
       country: "India",
-      state: "Maharashtra",
-      district: "Mumbai",
-      locality: "Juhu",
+      state: "Andhra Pradesh",
+      district: "Visakhapatnam",
+      locality: "South Vizag",
     },
     plastic_usage: {
       single_use_plastics: 2.5,
@@ -167,9 +167,9 @@ export const data = [
     email: "singh.family@example.com",
     residence: {
       country: "India",
-      state: "Maharashtra",
-      district: "Mumbai",
-      locality: "Thane",
+      state: "Andhra Pradesh",
+      district: "Visakhapatnam",
+      locality: "MDP",
     },
     plastic_usage: {
       single_use_plastics: 3.0,

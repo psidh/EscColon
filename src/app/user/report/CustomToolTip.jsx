@@ -5,7 +5,7 @@ const CustomTooltip = ({ active, payload, label }) => {
         <p className="font-medium text-gray-900">{`Date: ${label}`}</p>
         {payload.map((entry, index) => (
           <p key={index} className="text-sm" style={{ color: entry.color }}>
-            {`${entry.name}: ${entry.value}kg`}
+            {`${entry.name}: ${entry.value}lbs`}
           </p>
         ))}
       </div>

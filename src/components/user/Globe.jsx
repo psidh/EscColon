@@ -2,19 +2,21 @@
 import React from "react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
-
+import { MdOutlineStar } from "react-icons/md";
+import { Button } from "../ui/button";
 const World = dynamic(() => import("../ui/globe").then((m) => m.World), {
-  ssr: false,
+ssr: false,
 });
-
+import { useRouter } from "next/navigation";
 export default function GlobeDemo() {
+  const router = useRouter();
   const globeConfig = {
     pointSize: 4,
-    globeColor: "#065606",
+    globeColor: "#7a7a7a",
     showAtmosphere: true,
     atmosphereColor: "#FFFFFF",
     atmosphereAltitude: 0.1,
-    emissive: "#065606",
+    emissive: "#7a7a7a",
     emissiveIntensity: 0.1,
     shininess: 0.9,
     polygonColor: "rgba(255,255,255,0.7)",
@@ -28,9 +30,9 @@ export default function GlobeDemo() {
     maxRings: 3,
     initialPosition: { lat: 22.3193, lng: 114.1694 },
     autoRotate: true,
-    autoRotateSpeed: 0.5,
+    autoRotateSpeed: 0.8,
   };
-  const colors = ["#06b6d4", "#3b82f6", "#6366f1"];
+  const colors = ["#1cfc03", "#fc0b03", "#03a5fc"];
   const sampleArcs = [
     {
       order: 1,
@@ -395,33 +397,59 @@ export default function GlobeDemo() {
   ];
 
   return (
-    <div className="flex flex-row items-center justify-center py-20  md:h-auto dark:bg-black bg-white relative w-full">
-      <div className="w-full relative overflow-hidden h-full md:h-[40rem] px-4">
-        <motion.div
-          initial={{
-            opacity: 0,
-            y: 20,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 1,
-          }}
-          className="div"
-        >
-          <h2 className="text-center text-xl md:text-4xl font-bold text-black dark:text-white">
-            Global Average
-          </h2>
-        </motion.div>
-        {/* <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" /> */}
-        <div className="absolute w-full -bottom-20 h-72 md:h-full z-10">
-          <World data={sampleArcs} globeConfig={globeConfig} />
-        </div>
-        <h2 className="inline-flex border border-neutral-300 p-8 rounded-2xl text-center text-xl md:text-4xl font-bold text-black dark:text-white">
-          150 lbs
+    <div className="border border-neutral-300 rounded-2xl p-4 flex flex-col items-center justify-center md:h-auto dark:bg-black bg-white w-full space-y-4">
+      <motion.div
+        initial={{
+          opacity: 0,
+          y: 20,
+        }}
+        animate={{
+          opacity: 1,
+          y: 0,
+        }}
+        transition={{
+          duration: 1,
+        }}
+        className="text-center"
+      >
+        <h2 className="text-2xl font-bold text-black dark:text-white">
+          Global Average | 15lbs
         </h2>
+        <p className="text-sm text-neutral-600 dark:text-neutral-400">
+          Explore real-time global connections and statistics.
+        </p>
+      </motion.div>
+      <div className="flex flex-row space-x-4 w-full">
+        <div className="w-full h-full relative overflow-hidden md:h-[20rem] px-4">
+          <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
+          <div className="absolute w-full md:h-full z-10">
+            <World
+              data={sampleArcs}
+              globeConfig={globeConfig}
+            //   onClick={(arc) => handleArcClick(arc)}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-row justify-between w-full px-4">
+        <div className="space-x-2 flex items-center">
+          <span className="h-4 w-4 rounded-full bg-green-500" />
+          <span className="text-sm text-neutral-600 dark:text-neutral-400">
+            Minimum usage
+          </span>
+        </div>
+        <div className="space-x-2 flex items-center">
+          <span className="h-4 w-4 rounded-full bg-yellow-500" />
+          <span className="text-sm text-neutral-600 dark:text-neutral-400">
+            Medium usage
+          </span>
+        </div>
+        <div className="space-x-2 flex items-center">
+          <span className="h-4 w-4 rounded-full bg-red-500" />
+          <span className="text-sm text-neutral-600 dark:text-neutral-400">
+            Maximum usage
+          </span>
+        </div>
       </div>
     </div>
   );

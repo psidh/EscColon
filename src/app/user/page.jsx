@@ -4,15 +4,16 @@ import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import { CiWarning } from "react-icons/ci";
 import Globe from "@/components/user/Globe";
+import Comparisons from "../municipal/Comparison";
 
 export default function Page() {
   const router = useRouter();
-  const [data, setData] = useState(120);
+  const [data, setData] = useState(110);
   const [isEditing, setIsEditing] = useState(false);
-  const [newThreshold, setNewThreshold] = useState(data);
+  const [threshold, setThreshold] = useState(100);
 
   const handleSave = () => {
-    setData(newThreshold);
+    setThreshold(threshold);
     setIsEditing(false);
   };
 
@@ -23,16 +24,16 @@ export default function Page() {
         <span className="text-4xl font-medium ml-4">Sidharth!</span>
       </h1>
 
-      <div className="grid grid-cols-2 gap-8 my-12 w-1/2">
+      <div className="grid grid-cols-4 gap-6 my-12">
         <div className="p-4 flex flex-col items-start justify-between border border-neutral-300 rounded-2xl">
-          <h2 className="text-3xl font-semibold">Weekly Threshold</h2>
+          <h2 className="text-xl font-semibold">Weekly Plastic Waste</h2>
 
           {isEditing ? (
             <div className="w-full">
               <input
                 type="number"
-                value={newThreshold}
-                onChange={(e) => setNewThreshold(Number(e.target.value))}
+                value={threshold}
+                onChange={(e) => setThreshold(Number(e.target.value))}
                 className="border border-neutral-400 rounded-lg w-full p-2 mb-2"
               />
               <div className="flex space-x-2">
@@ -40,7 +41,7 @@ export default function Page() {
                   Save
                 </Button>
                 <Button
-                  className="bg-neutral-200 text-black w-full"
+                  className="bg-neutral-200 text-black hover:bg-neutral-300 w-full"
                   onClick={() => setIsEditing(false)}
                 >
                   Cancel
@@ -50,18 +51,18 @@ export default function Page() {
           ) : (
             <div className="flex flex-col justify-between w-full">
               <h3
-                className={`text-8xl mb-12 font-medium ${
-                  data >= 100 ? `text-red-500` : `text-green-500`
+                className={`text-8xl mb-24 font-medium ${
+                  data >= threshold ? `text-red-500` : `text-green-500`
                 }`}
               >
                 {data} <span className="text-3xl">lbs</span>
               </h3>
               <Button
-                className={`w-full ${data >= 100 ? `bg-red-500` : `bg-black`} `}
+                className={`w-full ${data >= threshold ? `bg-red-500` : `bg-green-500`} `}
                 onClick={() => router.push("/user/track")}
               >
                 Track Now
-                {data >= 100 && <CiWarning className="ml-2" />}
+                {data >= threshold && <CiWarning className="ml-2" />}
               </Button>
               <Button
                 className="w-full mt-2"
@@ -73,7 +74,7 @@ export default function Page() {
           )}
         </div>
 
-        <div className="p-4 flex flex-col items-start justify-center border border-neutral-300 rounded-2xl">
+        <div className="p-4 flex flex-col items-start justify-between border border-neutral-300 rounded-2xl">
           <h2 className="text-3xl font-semibold">Trends</h2>
           <img src="/user/trends.svg" alt="Trends" />
           <Button
@@ -83,8 +84,11 @@ export default function Page() {
             See Report
           </Button>
         </div>
+        <div className="col-span-2">
+          <Globe />
+        </div>
       </div>
-      <Globe/>
+      <Comparisons />
     </div>
   );
 }

@@ -4,10 +4,10 @@ export const data = [
     name: "Philkhana Sidharth",
     email: "philkhana@google.com",
     residence: {
-      country: "USA",
-      state: "California",
-      district: "Los Angeles",
-      locality: "Downtown",
+      country: "India",
+      state: "Andhra Pradesh",
+      district: "Visakhapatnam",
+      locality: "Endada",
     },
     usage: [
       {

@@ -51,7 +51,7 @@ export default function PlasticUsage() {
                       tick={{ fill: "#666" }}
                       tickLine={{ stroke: "#666" }}
                       label={{
-                        value: "Usage (kg)",
+                        value: "Usage (lbs)",
                         angle: -90,
                         position: "insideLeft",
                         fill: "#666",

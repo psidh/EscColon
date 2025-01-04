@@ -1,5 +1,5 @@
 "use client";
-
+import { IoMdQrScanner } from "react-icons/io";
 import React, { useState } from "react";
 import QrReader from "react-qr-scanner"; // Use `react-qr-scanner` library
 import { Input } from "@/components/ui/input";
@@ -142,7 +142,7 @@ export default function FormWithQRCode() {
             </div>
             <div>
               <label className="block text-sm font-medium">
-                Plastic Quantity (kg)
+                Plastic Quantity (lbs)
               </label>
               <Input
                 type="number"
@@ -159,7 +159,7 @@ export default function FormWithQRCode() {
 
         {/* QR Code Scanner Section */}
         <div className="w-full sm:w-1/2 bg-gray-100 p-6 rounded-lg shadow-md">
-          <h2 className="text-xl font-semibold mb-4">Scan QR Code</h2>
+          <h2 className="text-xl font-semibold mb-4 w-full text-center">Scan QR Code</h2>
           {scannerEnabled ? (
             <div className="relative">
               <QrReader
@@ -176,9 +176,9 @@ export default function FormWithQRCode() {
               </Button>
             </div>
           ) : (
-            <Button onClick={() => setScannerEnabled(true)}>
-              Start QR Code Scanner
-            </Button>
+            <div className="bg-[#70F45B] flex items-center rounded-2xl justify-center cursor-pointer" onClick={() => setScannerEnabled(true)}>
+              <IoMdQrScanner className="text-7xl text-black" />
+            </div>
           )}
           {qrData && (
             <div className="mt-4 p-2 border rounded bg-white">

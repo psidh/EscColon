@@ -36,12 +36,19 @@ export default function Page() {
           alt="Ring Image"
           className="w-[35%] object-cover top-0 "
         />
-        <div className="flex items-center justify-between w-full">
+        <div className="flex items-center justify-between w-full gap-x-3">
           <a
-            href="/explore"
+            href="/resources"
             className="flex items-center justify-between w-64 font-normal text-xl py-3 px-6 border border-green-500 rounded-full hover:bg-green-600 hover:text-white transition-all duration-200"
           >
-            Explore Now
+            Explore
+            <GoArrowUpRight />
+          </a>
+          <a
+            href="/login"
+            className="flex items-center justify-between w-64 font-normal text-xl py-3 px-6 bg-black rounded-full text-white transition-all duration-200"
+          >
+            Join Us
             <GoArrowUpRight />
           </a>
           <h1 className="text-7xl w-full text-right  font-light">

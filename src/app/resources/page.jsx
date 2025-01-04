@@ -1,74 +1,57 @@
 import { GoArrowUpRight } from "react-icons/go";
 
-export default function ResourcesPage() {
+export default function ExplorePage() {
   return (
-    <div className="w-full h-screen relative pt-20">
+    <div className="w-full h-screen relative py-20 text-black">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: `url('/explore.jpg')`,
+        }}
+      >
+        <div className="absolute inset-0"></div>
+      </div>
+
       {/* Content */}
-      <div className="relative z-10 px-8 py-12">
-        <h1 className="text-6xl font-light text-center mb-12">
-          Resources & <span className="italic">Insights</span>
+      <div className="relative z-10 flex p-16 flex-col items-center justify-between text-center px-4">
+        {/* Heading */}
+        <h1 className="text-5xl md:text-7xl font-light mb-8">
+          Together, Let&apos;s <span className="italic">Reduce</span> Plastic
+          Waste
         </h1>
 
-        <div className="grid grid-cols-3 gap-8">
-          {/* Card 1 */}
-          <div className="border border-neutral-200 rounded-3xl p-6 shadow-md shadow-green-500 transition-shadow duration-200">
-            <h2 className="text-2xl font-semibold mb-4">
-              Tips to Reduce Plastic Waste
-            </h2>
-            <p className="text-base font-light mb-6">
-              Learn actionable steps to cut down on single-use plastics in your
-              daily life.
-            </p>
-            <a
-              href="/tips"
-              className="flex items-center text-green-500 hover:text-green-400 transition-colors duration-200"
-            >
-              Read More
-              <GoArrowUpRight className="ml-2" />
-            </a>
-          </div>
+        {/* Description */}
+        <p className="text-md md:text-xl max-w-4xl mb-12">
+          We specialize in monitoring and reducing plastic waste through
+          collaboration with governments and individuals. Join us to access
+          resources, tips, and innovative solutions that pave the way for a
+          sustainable, plastic-free future.
+        </p>
 
-          {/* Card 2 */}
-          <div className="border border-neutral-200 rounded-3xl p-6 shadow-md shadow-green-500 transition-shadow duration-200">
-            <h2 className="text-2xl font-semibold mb-4">
-              Collaborative Projects
-            </h2>
-            <p className="text-base font-light mb-6">
-              Explore how we work with governments and communities to tackle
-              plastic waste.
-            </p>
-            <a
-              href="/projects"
-              className="flex items-center text-green-500 hover:text-green-400 transition-colors duration-200"
-            >
-              Learn More
-              <GoArrowUpRight className="ml-2" />
-            </a>
-          </div>
-
-          {/* Card 3 */}
-          <div className="border border-neutral-200 rounded-3xl p-6 shadow-md shadow-green-500 transition-shadow duration-200">
-            <h2 className="text-2xl font-semibold mb-4">Our Blog</h2>
-            <p className="text-base font-light mb-6">
-              Stay updated with the latest insights and stories from our
-              journey.
-            </p>
-            <a
-              href="/blog"
-              className="flex items-center text-green-500 hover:text-green-400 transition-colors duration-200"
-            >
-              View Blog
-              <GoArrowUpRight className="ml-2" />
-            </a>
-          </div>
+        {/* Secondary Links */}
+        <div className="flex flex-col md:flex-row items-center gap-4 text-base font-light">
+          <a
+            href="/resources"
+            className="flex items-center justify-center w-48 py-3 px-8 border-2 rounded-full border-white font-light hover:bg-white text-black transition-all duration-200"
+          >
+            Get Resources
+          </a>
+          <a
+            href="/collaborate"
+            className="flex items-center justify-center  py-3 px-8 border rounded-full border-neutral-300 bg-white transition-all duration-200"
+          >
+            Collaborate with Us
+          </a>
         </div>
       </div>
 
-      {/* Footer Glow */}
-      <div className="absolute bottom-0 left-0 w-full py-6 border border-neutral-200 bg-opacity-90">
-        <p className="text-center text-sm italic font-light text-neutral ">
-          &quot;Empowering communities and governments to reduce plastic waste
-          through knowledge and collaboration.&quot;
+      {/* Mission Statement */}
+      <div className="absolute bottom-0 left-0 right-0 px-4 py-6 bg-black bg-opacity-75 text-white">
+        <p className="text-sm md:text-lg font-light italic text-center">
+          &quot;We provide innovative solutions to monitor and reduce plastic
+          waste, working hand-in-hand with governments and communities to create
+          a sustainable, cleaner future.&quot;
         </p>
       </div>
     </div>
