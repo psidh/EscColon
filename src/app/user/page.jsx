@@ -87,7 +87,7 @@ export default function Page() {
 
         <div className="p-4 flex flex-col items-start justify-between border border-neutral-300 rounded-2xl space-y-4">
           <h2 className="text-3xl font-semibold">Eco-AI Assistant</h2>
-          <img src="/user/suggestion.jpg" alt="Suggestions" className="rounded-2xl" />
+          <img src="/eco-ai.png" alt="Suggestions" className="rounded-2xl" />
           <Button
             className="w-full "
             onClick={() => router.push("/user/suggestion")}
