@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { CiWarning } from "react-icons/ci";
 import Globe from "@/components/user/Globe";
 import Comparisons from "../municipal/Comparison";
+import CalPercent from "@/components/user/CalPercent";
 
 export default function Page() {
   const router = useRouter();
@@ -95,9 +96,27 @@ export default function Page() {
             Let's GO
           </Button>
           </div>
+
+        <div className="p-4 flex flex-col justify-between items-center border border-neutral-300 rounded-2xl space-y-4">
+          <h2 className="text-3xl font-semibold">Sustainability Score</h2>
+          <p className="text-9xl font-bold text-red-500">4</p>
+
+          <Button
+            className="w-full "
+            variant="outline"
+            onClick={() => router.push("/user/suggestion")}
+          >
+            Improve
+          </Button>
+          </div>
         <div className="col-span-2">
           <Globe />
         </div>
+        <div className="col-span-2 h-full">
+          <CalPercent/>
+        </div>
+
+
       </div>
       <Comparisons />
     </div>
