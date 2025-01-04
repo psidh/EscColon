@@ -23,7 +23,7 @@ export default function Page() {
         <span className="text-4xl font-medium ml-4">Sidharth!</span>
       </h1>
 
-      <div className="grid grid-cols-2 gap-8 my-12 w-1/2">
+      <div className="grid grid-cols-3 gap-8 my-12 w-3/4">
         <div className="p-4 flex flex-col items-start justify-between border border-neutral-300 rounded-2xl">
           <h2 className="text-3xl font-semibold">Weekly Threshold</h2>
 
@@ -83,8 +83,19 @@ export default function Page() {
             See Report
           </Button>
         </div>
+
+        <div className="p-4 flex flex-col items-start justify-between border border-neutral-300 rounded-2xl space-y-4">
+          <h2 className="text-3xl font-semibold">Eco-AI Assistant</h2>
+          <img src="/user/suggestion.jpg" alt="Suggestions" className="rounded-2xl" />
+          <Button
+            className="w-full "
+            onClick={() => router.push("/user/suggestion")}
+          >
+            Let's GO
+          </Button>
+        </div>
       </div>
       <Globe/>
     </div>
-  );
+  ); 
 }

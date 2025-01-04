@@ -1,4 +1,5 @@
 import FourCard from "@/components/FourCard";
+import Footer from "@/components/Footer";
 import Section2 from "@/components/section2/Section2";
 import Section3 from "@/components/section3/Section3";
 import { GoArrowUpRight } from "react-icons/go";
@@ -15,7 +16,10 @@ export default function Page() {
               <p className="text-black font-semibold text-lg">
                 Reducing Plastic Waste
               </p>
-              <a href="/resources" className="flex items-center justify-start mt-2 text-neutral-700 underline font-light text-sm">
+              <a
+                href="/resources"
+                className="flex items-center justify-start mt-2 text-neutral-700 underline font-light text-sm"
+              >
                 Blog
                 <GoArrowUpRight />
               </a>
@@ -45,7 +49,7 @@ export default function Page() {
             <GoArrowUpRight />
           </a>
           <h1 className="text-7xl w-full text-right  font-light">
-            Join Us in <span className="italic">building</span> a <br />  clean
+            Join Us in <span className="italic">building</span> a <br /> clean
             Environment
           </h1>
         </div>
@@ -58,6 +62,8 @@ export default function Page() {
       <Section2 />
       <FourCard />
       <Section3 />
+
+      <Footer />
     </div>
   );
 }
