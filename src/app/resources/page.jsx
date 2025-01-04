@@ -1,13 +1,16 @@
 import { GoArrowUpRight } from "react-icons/go";
+import { ImLeaf } from "react-icons/im";
+import { CgArrowTopRight } from "react-icons/cg";
+import { Button } from "@/components/ui/button";
 
 export default function ExplorePage() {
   return (
-    <div className="w-full h-screen relative py-20 text-black">
+    <div className="w-full min-h-screen relative py-20 text-black">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: `url('/explore.jpg')`,
+          backgroundImage: `url('https://images.unsplash.com/photo-1518837695005-2083093ee35b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG9jZWFuJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww')`,
         }}
       >
         <div className="absolute inset-0"></div>
@@ -33,7 +36,7 @@ export default function ExplorePage() {
         <div className="flex flex-col md:flex-row items-center gap-4 text-base font-light">
           <a
             href="/resources"
-            className="flex items-center justify-center w-48 py-3 px-8 border-2 rounded-full border-white font-light hover:bg-white text-black transition-all duration-200"
+            className="flex items-center justify-center w-48 py-3 px-8  rounded-full bg-black text-white transition-all duration-200"
           >
             Get Resources
           </a>
@@ -43,6 +46,72 @@ export default function ExplorePage() {
           >
             Collaborate with Us
           </a>
+        </div>
+      </div>
+
+      <div className="w-[80%] mx-auto grid grid-cols-3 gap-4 mb-16">
+        {/*  */}
+        <div className="bg-white/15 backdrop-blur-md rounded-2xl  p-5 flex flex-col justify-center items-center space-y-4 relative">
+          <h2 className="text-2xl  font-light text-white antialiased flex justify-center items-center">
+            Protect Ecosystems
+          </h2>
+          <p className="text-neutral-900 text-sm text-wrap text-center">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
+            sint, mollitia consequuntur minima ea quo culpa inventore similique
+            earum perferendis dolore nulla molestiae fugiat porro magnam
+            reprehenderit nisi dicta officiis.
+          </p>
+
+          <ImLeaf className="text-green-600 mr-2 absolute top-3 right-3" /> 
+
+          <div className="flex justify-start items-start space-x-4">
+            <Button className="w-fit" >
+              <span>Learn More</span> 
+              <CgArrowTopRight className="text-white" />
+            </Button>
+          </div>
+        </div>
+        {/*  */}
+        <div className="bg-white/15 backdrop-blur-md rounded-2xl  p-5 flex flex-col justify-center items-center space-y-4 relative">
+          <h2 className="text-2xl  font-light text-white antialiased flex justify-center items-center">
+            Protect Ecosystems
+          </h2>
+          <p className="text-neutral-900 text-sm text-wrap text-center">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
+            sint, mollitia consequuntur minima ea quo culpa inventore similique
+            earum perferendis dolore nulla molestiae fugiat porro magnam
+            reprehenderit nisi dicta officiis.
+          </p>
+
+          <ImLeaf className="text-green-600 mr-2 absolute top-3 right-3" /> 
+
+          <div className="flex justify-start items-start space-x-4">
+            <Button className="w-fit" >
+              <span>Learn More</span> 
+              <CgArrowTopRight className="text-white" />
+            </Button>
+          </div>
+        </div>
+        {/*  */}
+        <div className="bg-white/15 backdrop-blur-md rounded-2xl  p-5 flex flex-col justify-center items-center space-y-4 relative">
+          <h2 className="text-2xl  font-light text-white antialiased flex justify-center items-center">
+            Protect Ecosystems
+          </h2>
+          <p className="text-neutral-900 text-sm text-wrap text-center">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
+            sint, mollitia consequuntur minima ea quo culpa inventore similique
+            earum perferendis dolore nulla molestiae fugiat porro magnam
+            reprehenderit nisi dicta officiis.
+          </p>
+
+          <ImLeaf className="text-green-600 mr-2 absolute top-3 right-3" /> 
+
+          <div className="flex justify-start items-start space-x-4">
+            <Button className="w-fit" >
+              <span>Learn More</span> 
+              <CgArrowTopRight className="text-white" />
+            </Button>
+          </div>
         </div>
       </div>
 
