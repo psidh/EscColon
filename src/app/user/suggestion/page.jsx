@@ -19,7 +19,7 @@ export default function page() {
     setUrl(imageSrc);
 
     try {
-      const response = await fetch("http://localhost:3002/analyzeImage", {
+      const response = await fetch("http://localhost:42069/analyzeImage", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
