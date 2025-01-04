@@ -12,7 +12,7 @@ export default function page() {
   const webcamRef = useRef(null);
   const [url, setUrl] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [suggestionsResponse, setSuggestionsResponse] = useState({});
+  const [suggestionsResponse, setSuggestionsResponse] = useState(null);
   const capture = useCallback(async () => {
     setIsLoading(true);
     const imageSrc = webcamRef.current.getScreenshot();
@@ -88,8 +88,8 @@ export default function page() {
         </div>
       )}
 
-      {suggestionsResponse != {} && !isLoading && (
-        <div className="grid grid-cols-2 gap-5">
+      {suggestionsResponse !== null  && !isLoading && (
+        <div className="grid grid-cols-2 gap-5 bg-neutral-100 rounded-xl border-2 border-neutral-300 p-6">
           {suggestionsResponse?.suggestions?.map((sug, index) => (
             <div
               key={index}
@@ -100,7 +100,7 @@ export default function page() {
                 {sug.actions.map((act, index) => (
                   <li
                     key={index}
-                    className="text-sm font-normal"
+                    className="text-sm font-normal list-disc"
                   >
                     {act}
                   </li>
