@@ -80,7 +80,7 @@ export default function Analytics() {
                   {chartConfig[chart].label}
                 </span>
                 <span className="text-lg font-bold leading-none sm:text-3xl">
-                  {total[chart].toFixed(2)} kg
+                  {total[chart].toFixed(2)} lbs
                 </span>
               </button>
             );
@@ -106,7 +106,7 @@ export default function Analytics() {
               tickLine={false}
               axisLine={false}
               tickMargin={8}
-              minTickGap={32}
+              minTiclbsap={32}
             />
             <ChartTooltip
               content={

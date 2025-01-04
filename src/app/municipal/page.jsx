@@ -15,21 +15,19 @@ import { data } from "@/data/mumbai";
 import Analytics from "@/components/Analytics";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Comparisons from "./Comparison";
 
 export default function TableDemo() {
   const router = useRouter();
-  const [showTable, setShowTable] = useState(false); // State to control table visibility
+  const [showTable, setShowTable] = useState(true); // State to control table visibility
   const [showAnalytics, setShowAnalytics] = useState(false); // State to control analytics visibility
   return (
     <div className="mt-24 px-16 py-8">
       {/* Buttons */}
       <div className="flex justify-start gap-4 mb-6">
-        <Button onClick={() => setShowTable(!showTable)}>
-          {showTable ? "Hide Data" : "See Data"}
-        </Button>
         <Button
-          onClick={() =>
-            router.push("/municipal/add-data") // Navigate to Add Data page
+          onClick={
+            () => router.push("/municipal/add-data") // Navigate to Add Data page
           }
         >
           Add Data
@@ -42,16 +40,17 @@ export default function TableDemo() {
       {/* Analytics (conditionally rendered) */}
       {showAnalytics && <Analytics />}
 
+      <Comparisons />
+      <p className="text-center w-full text-neutral-400 italic mb-6">Plastic usage data for Visakhapatnam households.</p>
       {/* Table (conditionally rendered) */}
       {showTable && (
-        <Table>
-          <TableCaption>Plastic usage data for Mumbai households.</TableCaption>
-          <TableHeader>
-            <TableRow>
+        <Table className="rounded-t-2xl rounded-2xl">
+          <TableHeader className="rounded-t-2xl">
+            <TableRow className="bg-neutral-200 rounded-t-2xl">
               <TableHead className="w-[150px]">Household Name</TableHead>
               <TableHead>Email</TableHead>
               <TableHead>Residence</TableHead>
-              <TableHead>Plastic Usage (kg)</TableHead>
+              <TableHead>Plastic Usage (lbs)</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -63,7 +62,7 @@ export default function TableDemo() {
                   {household.residence.locality}, {household.residence.district}
                   , {household.residence.state}, {household.residence.country}
                 </TableCell>
-                <TableCell>
+                <TableCell className="bg-neutral-100">
                   <ul>
                     <li>
                       Single-use Plastics:{" "}
@@ -82,8 +81,8 @@ export default function TableDemo() {
               </TableRow>
             ))}
           </TableBody>
-          <TableFooter>
-            <TableRow>
+          <TableFooter className="rounded-b-2xl">
+            <TableRow className="bg-black rounded-b-2xl text-xl font-light text-white">
               <TableCell colSpan={3}>
                 Total Plastic Usage (All Households)
               </TableCell>
@@ -94,7 +93,7 @@ export default function TableDemo() {
                     0
                   )
                   .toFixed(2)}{" "}
-                kg
+                lbs
               </TableCell>
             </TableRow>
           </TableFooter>
