@@ -82,7 +82,7 @@ export default function TableDemo() {
             ))}
           </TableBody>
           <TableFooter className="rounded-b-2xl">
-            <TableRow className="bg-black rounded-b-2xl text-xl font-light text-white">
+            <TableRow className="hover:bg-black hover:text-white bg-black rounded-b-2xl text-xl font-light text-white">
               <TableCell colSpan={3}>
                 Total Plastic Usage (All Households)
               </TableCell>

@@ -38,7 +38,7 @@ export default function Page() {
         <img
           src="/Group 8.jpg"
           alt="Ring Image"
-          className="w-[35%] object-cover top-0 "
+          className="w-[35%] object-cover top-0"
         />
         <div className="flex items-center justify-between w-full gap-x-3">
           <a

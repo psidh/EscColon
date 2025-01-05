@@ -104,7 +104,7 @@ export default function Page() {
           <Button
             className="w-full "
             variant="outline"
-            onClick={() => router.push("/user/suggestion")}
+            onClick={() => router.push("/resources")}
           >
             Improve
           </Button>

@@ -89,11 +89,11 @@ export default function page() {
       )}
 
       {suggestionsResponse !== null  && !isLoading && (
-        <div className="grid grid-cols-2 gap-5 bg-neutral-100 rounded-xl border-2 border-neutral-300 p-6">
+        <div className="grid grid-cols-2 gap-5 rounded-xl  p-6">
           {suggestionsResponse?.suggestions?.map((sug, index) => (
             <div
               key={index}
-              className="grid-cols-2 gap-4 m-4 rounded-2xl border border-neutral-400 shadow-md flex flex-col justify-start items-center space-y-4 p-4"
+              className="grid-cols-2 gap-4 p-4 rounded-2xl border border-neutral-200 shadow-md flex flex-col justify-start items-center space-y-4"
             >
               <p className="text-lg font-bold text-black">{sug?.item}</p>
               <ul>
